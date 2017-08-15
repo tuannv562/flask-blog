@@ -152,4 +152,4 @@ def change_email(token):
         flash('Your email has been changed')
     else:
         flash('Token is invalid or expired')
-    return render_template('main.index')
+    return redirect(url_for('main.index'))
